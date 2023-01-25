@@ -1,0 +1,606 @@
+
+/***** RESETEO DE ESTILOS *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;    
+}
+
+/***** HEADER *****/
+
+header {
+    background-color: #DEB6AB;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100px;
+    font-size: 20px;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px;
+    border-bottom-color: #815B5B;
+    border-bottom-style: solid;
+    display: flex;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    justify-self: flex-start;
+    margin: 10px;
+    border-radius: 50px;    
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li {    
+    padding: 5px;     
+}
+
+nav ul li a {
+    color:#815B5B;
+    text-decoration: none;    
+    background-position: 50%, 100%;
+    background-repeat: no-repeat;
+    background-size: 0%, 2px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;           
+}
+
+/***** INDEX *****/
+
+.carrusel img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.bienvenida {
+    background-color: #F5EBE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.bienvenida h1 {
+    font-size: 30px;
+}
+
+.bienvenida p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.otro-color {
+    color: #749f82;
+}
+
+.dato-importante {
+    color: #B73E3E;    
+}
+
+/***** NOSOTROS *****/
+
+.main-nosotros {
+    background-image: none;
+    background-color: #DEB6AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+}
+
+.main-nosotros img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;    
+    margin: 25px;
+    border-radius: 30px;    
+}
+
+.main-nosotros p {
+    font-size: 18px;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #967E76;
+    text-align: center;
+}
+
+/***** GALERIA *****/
+
+.main-galeria {
+    position: relative;
+    background-image: none;
+    background-color: #DEB6AB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+.main-galeria h1 {
+    color: #815B5B;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.grilla {        
+    width: 50%;    
+    padding: 30px;
+    display: grid;    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto; 
+    grid-template-areas: 
+        'area1 area5 area5 area4'
+        'area1 area5 area5 area4'
+        'area3 area6 area2 area2';
+    gap: 5px;
+    justify-content: center;            
+}
+
+.galeria-estanteria {
+    grid-area: area1;    
+}
+
+.galeria-mesa {    
+    grid-area: area2;    
+}
+
+.galeria-lampara {    
+    grid-area: area3;        
+}
+
+.galeria-colgantes {    
+    grid-area: area4;    
+}
+
+.galeria-juegojardin {
+    grid-area: area5;    
+}
+
+.galeria-mesajardin {    
+    grid-area: area6;    
+}
+
+.img-galeria img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-content: center;
+    transition: all 0.2s;         
+}
+
+.img-galeria img:hover {
+    scale: 1.2;
+}
+
+/***** PRODUCTOS *****/
+
+.main-productos {
+    position: relative;
+    background-image: none;
+    background-color: #DEB6AB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.main-productos h2 {    
+    color: #815B5B;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;    
+}
+
+.main-productos img {
+    box-shadow: 12px 5px 10px -2px rgba(152, 152, 152, 0.55);
+    border-radius: 10px;
+    object-fit: cover;
+    filter: grayscale(0.5);
+}
+
+.main-productos img:hover {
+    filter: blur(0.3px);
+}
+
+.padre-prod-destacados {       
+    gap: 10px;
+    display: flex;     
+}
+
+.card {
+    background-color:#F5EBE0;
+    width: 25%;
+}
+
+.btn-productos {
+    background-color: #FF9F9F;
+    font-size: 15px;
+    color:#F5EBE0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.img-destacados img {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    filter: grayscale(1.5);
+}
+
+.col-md-4 img {
+    width: 150px;
+    height: 150px;    
+}
+
+.img-destacados img:hover {
+    filter: blur(0px);
+}
+
+/***** CONTACTO *****/
+
+.main-contacto {
+    background-image: none;
+    background-color: #DEB6AB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;           
+}
+
+.main-contacto h1 {    
+    color: #815B5B;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.formulario {
+    background-color: #967E76;    
+    color: #DEB6AB;        
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 500px;    
+}
+
+.comentarios {
+    display: flex;
+    flex-direction: column;    
+    height: 100px;
+    width: 500px;        
+    resize: none;                
+}
+
+.btn-contacto {
+    width: 80px;
+    align-self: flex-end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#FF9F9F;
+    border-radius: 5px;
+    border-color:#FF9F9F;
+    margin-top: 5px;        
+}
+
+/***** FOOTER *****/
+
+footer {
+    background-color: #815B5B;
+    display: flex;    
+    justify-content: space-between;    
+    height: 180px ;
+    position: relative;                            
+}
+
+footer section {    
+    color: #F5EBE0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;    
+}
+
+.datos-footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 5px;    
+    margin-top: 100px;
+}
+
+.redes-footer {
+    position: absolute;
+    right: 5px;
+    border-width: 2px; 
+    margin-top: 30px;   
+}
+
+.color-redes {
+    color: #E26868;
+}
+
+.redes-footer a {
+    color: #F5EBE0;
+    font-size: 25px;
+    display:inline-block;
+    padding: 3px;                 
+}
+
+.redes-footer a:hover {    
+    transform: scale(1.2);
+}
+
+/***** RESPONSIVE *****/
+
+/***** TABLET *****/
+
+@media only screen and (max-width: 1023px) {
+
+    header {
+        height: 100%;
+        width: 100%; 
+        font-size: 18px;       
+    }
+
+    header img {
+        width: 60px;           
+    }
+
+    .carrusel img {
+        width: 100%;
+        height: 250px;        
+    }     
+    
+    .bienvenida{
+        height: 200px;
+    }
+
+    .bienvenida h1 {
+        font-size: 20px;  
+        display: contents;                
+    }
+
+    .bienvenida p {
+        font-size: 15px;        
+    }
+
+    footer {            
+        height: 150px ;                                   
+    }   
+    
+    footer section {
+        font-size: 18px;
+    }
+
+    .datos-footer {            
+        margin-top: 75px;
+    }
+    
+    .redes-footer {       
+        margin-top: 25px;  
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        height: 100%;
+        width: 100%; 
+        font-size: 16px;       
+    }
+
+    header img {
+        width: 40px;           
+    }
+
+    .carrusel img {
+        width: 100%;
+        height: 180px;       
+    }     
+    
+    .bienvenida h1 {
+        font-size: 18px;  
+        display: contents;                
+    }
+
+    .bienvenida p {
+        font-size: 15px;        
+    }
+
+    footer {            
+        height: 120px ;                                   
+    }
+    
+    footer section {
+        font-size: 12px;
+    }
+
+    .datos-footer {            
+        margin-top: 52px;       
+    }
+    
+    .redes-footer {       
+        margin-top: 15px;           
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    header {
+        height: 100%;
+        width: 100%; 
+        font-size: 14px;       
+    }
+
+    header img {
+        width: 35px;           
+    }
+
+    .carrusel img {
+        width: 100%;
+        height: 170px;       
+    }     
+    
+    .bienvenida h1 {
+        font-size: 16px;  
+        display: contents;                
+    }
+
+    .bienvenida p {
+        font-size: 14px;        
+    }
+
+    .col-12 {
+        width: 400px;
+    }
+
+    .col-12 .input {
+        width: 380px;
+    }
+
+    .col-12 .comentarios {
+        width: 380px;
+    }
+
+    footer {            
+        height: 100px ;                                   
+    }
+    
+    footer section {
+        font-size: 10px;
+    }
+
+    .datos-footer {            
+        margin-top: 40px;       
+    }
+    
+    .redes-footer {       
+        margin-top: 2px;           
+    }
+
+}
+
+/***** MOBILE *****/
+
+@media only screen and (max-width: 489px) {
+
+    header {
+        height: 60px;        
+        font-size: 10px;       
+    }
+
+    header img {
+        width: 30px;           
+    }
+
+    nav {
+        flex-direction: column;
+        margin-right: 80px;       
+    }   
+
+    .carrusel img {
+        width: 300px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .bienvenida h1 {
+        font-size: 13px;  
+    }
+    
+    .bienvenida p {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+    }
+
+    .redes-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .formulario {
+        background-color: #967E76;    
+        color: #DEB6AB;        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+
+    .col-12 {
+        width: 300px;
+    }
+
+    .col-12 .input {
+        width: 280px;
+    }
+
+    .col-12 .comentarios {
+        width: 280px;
+    }
+
+    footer {            
+        height: 100px ;                                   
+    }
+    
+    footer section {
+        font-size: 10px;
+    }
+
+    .datos-footer {            
+        margin-top: 40px;       
+    }
+    
+    .redes-footer {       
+        margin-top: 2px;           
+    }
+
+
+
+} 
+
+
+
