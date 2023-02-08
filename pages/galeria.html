@@ -4,45 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Galería de fotos</title>
 </head>
 
 <body>
 
-    <header class="header">
-        
-        <a href="../index.html" class="logo">
-            <img src="../assets/logo.jpg" alt="Logo">
-        </a>
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galería</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <header class="header">
+            
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="Logo">
+            </a>
+            
+            <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>                      
+                </ul>
+                </div>
+            </div>
+            </nav>
 
-    </header>
+        </header>
 
     <main class="main-galeria">        
         
         <h1>Galería de fotos</h1>
         
         <section class="grilla">            
+                
+            <div class="galeria-estanteria img-galeria">
+                <img src="../assets/galeria/estanteria.jpg" alt="estanteria">
+            </div>          
+            
+            <div class="galeria-mesa img-galeria">                    
+                <img src="../assets/galeria/mesa.jpg" alt="mesa">
+            </div>
+
+            <div class="galeria-lampara img-galeria">
+                <img src="../assets/galeria/lampara.jpg" alt="lampara">
+            </div>
+            
+            <div class="galeria-colgantes img-galeria">
+                <img src="../assets/galeria/colgantes.jpg" alt="colgantes">
+            </div>
+
+            <div class="galeria-juegojardin img-galeria">
+                <img src="../assets/galeria/juegojardin.jpg" alt="juegojardin">
+            </div>
+            
+            <div class="galeria-mesajardin img-galeria">
+                <img src="../assets/galeria/mesajardin.jpg" alt="mesajardin">
+            </div>               
+
+        </section>
+
+        <section class="grillados">            
                 
             <div class="galeria-estanteria img-galeria">
                 <img src="../assets/galeria/estanteria.jpg" alt="estanteria">
@@ -88,6 +124,10 @@
         </section>
 
     </footer>
+
+    <!--SCRIPT DE BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
 
     <!--SCRIPT DE FONTAWESOME-->
     <script src="https://kit.fontawesome.com/9c3a53de5f.js" crossorigin="anonymous"></script>

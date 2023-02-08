@@ -11,60 +11,130 @@
 
 <body>
 
-    <header class="header">
-        
-        <a href="../index.html" class="logo">
-            <img src="../assets/logo.jpg" alt="Logo">
-        </a>
-        
-        <nav>
+        <header class="header">
+            
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="Logo">
+            </a>
+            
+            <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>                      
+                </ul>
+                </div>
+            </div>
+            </nav>
 
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galería</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-
-        </nav>
-
-    </header>
+        </header>
     
     <main class="main-contacto">
 
-        <h1>Contáctate con nosotros</h1>
-        
-        <form class="formulario">        
+        <div class="cambios">
 
-            <div class="col-12">
-                <label for="name" class="form-label">Nombre:</label>
-                <input type="name" class="input" id="name" aria-describedby="name" placeholder="Ingrese su nombre.">
+            <h1>Cambios, devoluciones y envíos a todo el país</h1>
+
+            <div>            
+                <p>
+                    A partir del día en que el cliente realiza la compra on-line, dispone de 30 días corridos para efectuar cambios o solicitar una devolución. Apenas recibe su compra es importante que revise el estado del o los productos para evitar posibles futuros inconvenientes.
+                </p>
+
+                <p>
+                    Al momento de hacer un reclamo es indispensable que el cliente presente la factura de compra o ticket de cambio. El o los productos en cuestión deben estar en perfecto estado y sin uso.
+                </p>
+
+                <p>
+                    Los productos adquiridos en sale no admiten cambios ni devoluciones.
+                </p>            
+
+                <p>
+                    A partir de confirmado el pago hay un plazo de 2 días hábiles para la entrega.
+                </p>
+
+                <p>
+                    Al interior el plazo de entrega es de 3 días hábiles. 
+                </p>
+
+                <p>
+                    Sujeto a disponibilidad de stock de lo contrario las entregas se realizarán dentro del plazo mencionado en cada producto.
+                </p>     
+
             </div>
+
+        </div>
+
+        <div class="contacto">
+
+            <div class="todoform">
+
+                <h1>Contactate con nosotros</h1>
             
-            <div class="col-12">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="input" id="email" aria-describedby="email" placeholder="Ingrese su email.">
-            </div>           
+                <form class="formulario">                  
+                    <div class="col-12">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="name" class="input" id="name" aria-describedby="name" placeholder="Ingrese su nombre.">
+                    </div>
+                            
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="input" id="email" aria-describedby="email" placeholder="Ingrese su email.">
+                    </div>           
 
-            <div class="col-12">
-                <label for="comentarios" class="form-label">Comentarios:</label>
-                <textarea class="comentarios" id="comentarios" placeholder="Deje su mensaje." rows="3"></textarea>
+                    <div class="col-12">
+                        <label for="comentarios" class="form-label">Comentarios:</label>
+                        <textarea class="comentarios" id="comentarios" placeholder="Deje su mensaje." rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-contacto">Enviar</button>
+                </form>
+
             </div>
 
-            <button type="submit" class="btn-contacto">Enviar</button>
+            <div class="ubicacion">
 
-        </form>
+                <h1>Ubicación</h1>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.464135711246!2d-56.16656458424568!3d-34.89480018046573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80537f83cd37%3A0x4120a8dc22b49b9!2sAv.%20Italia%201234%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1675564646731!5m2!1ses-419!2suy" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="500" height="400" style="border:3px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+        </div>
+
+        <div class="newslettertexto">
+
+            <h1>Newsletter</h1>
+
+            <p>¡Suscribite y recibí todas nuestras novedades!</p>
+
+            <div class="newsletter"> 
+                <form class="row g-3">            
+                    <div class="col-auto">              
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email.">
+                    </div>
+                    
+                    <div class="col-auto">
+                        <button type="submit" class="btn-contacto mb-3">Suscribirme</button>
+                    </div>
+                </form>
+            </div>
+        </div>   
         
     </main>
 
@@ -84,7 +154,6 @@
         </section>
 
     <!--SCRIPT DE BOOTSTRAP-->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!--SCRIPT DE FONTAWESOME-->

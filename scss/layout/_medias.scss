@@ -1,0 +1,431 @@
+/************************************************/
+
+/****************** RESPONSIVE ******************/
+
+/************************************************/
+
+@media only screen and (max-width: 1028px) {
+
+    /*** HEADER ***/
+
+    header {
+        height: 100%;
+        width: 100%; 
+        font-size: 18px;       
+    }
+
+    header img {
+        width: 60px;           
+    }
+
+    /*** INDEX ***/
+
+    .carrusel img {
+        width: 100%;
+        height: 250px;        
+    }     
+    
+    .bienvenida{
+        height: 200px;
+    }
+
+    .bienvenida h1 {
+        font-size: 20px;  
+        display: contents;                
+    }
+
+    .bienvenida p {
+        font-size: 15px;
+        margin-top: 15px;        
+    }
+
+    /*** NOSOTROS ***/
+
+    .nosotros-img img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;    
+        margin: 25px;
+        border-radius: 30px;    
+    }
+    
+    .main-nosotros p {
+        font-size: 20px;    
+        font-family: $font-p;
+        color: #967E76;    
+        padding: 10px;                
+    }
+    
+    .bannernosotros img {
+        height: 500px;
+        width: 200vh;
+        object-fit: cover;
+        padding: 30px;
+        border-radius: 80px;        
+    }
+    
+    .main-nosotros h2 {
+        color: $color-footer;
+        font-family:$font-h1;
+        font-size: 30px;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    
+    .main-nosotros h3 {
+        color: $color-footer;
+        font-family:$font-h1;
+        font-size: 20px;
+        font-style: italic;
+        margin-top: 20px;
+    }
+
+
+
+    /*** FOOTER ***/
+
+    footer {            
+        height: 150px ;                                   
+    }   
+    
+    footer section {
+        font-size: 18px;
+    }
+
+    .datos-footer {            
+        margin-top: 75px;
+    }
+    
+    .redes-footer {       
+        margin-top: 25px;  
+    }
+
+}
+
+/************************************************/
+
+@media only screen and (max-width: 767px) {
+
+    /*** HEADER ***/
+
+    header {
+        height: 100%;
+        width: 100%; 
+        font-size: 16px;       
+    }
+
+    header img {
+        width: 40px;           
+    }
+
+    /*** INDEX ***/
+
+    .carrusel img {
+        width: 100%;
+        height: 180px;       
+    }     
+    
+    .bienvenida h1 {
+        font-size: 18px;  
+        display: contents;                
+    }
+
+    .bienvenida p {
+        font-size: 15px;
+        margin-top: 15px;        
+    }
+
+    /*** NOSOTROS ***/
+
+    .main-nosotros {         
+        background-color: $color-fondo;
+        display: flex;
+        flex-direction: column;               
+    }
+    
+    .divnosotros {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nosotros-img img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;    
+        margin: 25px;
+        border-radius: 30px;    
+    }
+    
+    .main-nosotros p {
+        font-size: 20px;    
+        font-family: $font-p;
+        color: #967E76;    
+        padding: 10px;                
+    }
+
+    /*** FOOTER ***/
+
+    footer {            
+        height: 120px ;                                   
+    }
+    
+    footer section {
+        font-size: 12px;
+    }
+
+    .datos-footer {            
+        margin-top: 52px;       
+    }
+    
+    .redes-footer {       
+        margin-top: 15px;           
+    }
+
+}
+
+/************************************************/
+
+@media only screen and (max-width: 550px) {
+
+    /*** HEADER ***/
+
+    header {
+        height: 100%;
+        width: 100%; 
+        font-size: 14px;       
+    }
+
+    header img {
+        width: 35px;           
+    }
+
+    /*** INDEX ***/
+
+    .carrusel img {
+        width: 100%;
+        height: 170px;       
+    }     
+    
+    .bienvenida h1 {
+        font-size: 16px;  
+        display: contents;                
+    }
+
+    .bienvenida p {
+        font-size: 14px;
+        margin-top: 15px;        
+    }
+
+    /*** CONTACTO ***/
+
+    .col-12 {
+        width: 400px;
+    }
+
+    .col-12 .input {
+        width: 380px;
+    }
+
+    .col-12 .comentarios {
+        width: 380px;
+    }
+
+    /*** FOOTER ***/
+
+    footer {            
+        height: 100px ;                                   
+    }
+    
+    footer section {
+        font-size: 10px;
+    }
+
+    .datos-footer {            
+        margin-top: 40px;       
+    }
+    
+    .redes-footer {       
+        margin-top: 2px;           
+    }
+
+}
+
+/************************************************/
+
+@media only screen and (max-width: 489px) {
+
+    /*** HEADER ***/
+
+    header {
+        height: 60px;        
+        font-size: 10px;       
+    }
+
+    header img {
+        width: 30px;           
+    }
+
+    nav {
+        flex-direction: column;
+        margin-right: 80px;       
+    }
+    
+    /*** INDEX ***/
+
+    .carrusel img {
+        width: 300px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .bienvenida h1 {
+        font-size: 13px;  
+    }
+    
+    .bienvenida p {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+        margin-top: 15px;
+    }    
+
+    /*** CONTACTO ***/
+
+    .formulario {
+        background-color: #967E76;    
+        color: $color-fondo;        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        font-family: $font-h1;
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+
+    .col-12 {
+        width: 300px;
+    }
+
+    .col-12 .input {
+        width: 280px;
+    }
+
+    .col-12 .comentarios {
+        width: 280px;
+    }
+
+    /*** FOOTER ***/    
+
+    footer {            
+        height: 100px ;                                   
+    }
+    
+    footer section {
+        font-size: 10px;
+    }
+
+    .datos-footer {            
+        margin-top: 40px;       
+    }
+    
+    .redes-footer {
+        flex-direction: column;
+        gap: 15px;       
+        margin-top: 2px;           
+    }
+
+}
+
+/************************************************/
+
+@media only screen and (max-width: 400px) {
+
+    /*** HEADER ***/
+
+    header {
+        height: 60px;        
+        font-size: 10px;       
+    }
+
+    header img {
+        width: 30px;           
+    }
+
+    nav {
+        flex-direction: column;
+        margin-right: 80px;       
+    }
+    
+    /*** INDEX ***/
+
+    .carrusel img {
+        width: 300px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .bienvenida h1 {
+        font-size: 10px;  
+    }
+    
+    .bienvenida p {
+        font-size: 8px;
+        display: flex;
+        justify-content: center;        
+        padding-right: 30px;
+        margin-top: 15px;
+    }
+
+    /*** CONTACTO ***/
+
+    .formulario {
+        background-color: #967E76;    
+        color: $color-fondo;        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        font-family: $font-h1;
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+
+    .col-12 {
+        width: 300px;
+    }
+
+    .col-12 .input {
+        width: 280px;
+    }
+
+    .col-12 .comentarios {
+        width: 280px;
+    }
+    
+    /*** FOOTER ***/
+
+    footer {            
+        height: 100px ;                                   
+    }
+    
+    footer section {
+        font-size: 9px;
+    }
+
+    .datos-footer {            
+        margin-top: 40px;       
+    }
+    
+    .redes-footer {       
+        margin-top: 2px;
+        size: 10px;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 9px;           
+    }
+
+
+
+} 
