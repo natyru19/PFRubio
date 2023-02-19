@@ -14,20 +14,16 @@
     height: 400px;
 
     h1 {
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        padding: 50px;
+        font-size: 28px;
+        padding: 50px 25px 50px 25px;
     }
 
     p {
         font-size: 25px;
         color: $color-footer;
         font-family: $font-h1;
-        font-style: italic;
-        display: flex;
-        justify-content: center;
-        padding-right: 30px;
+        font-style: italic;        
+        justify-content: center;        
     }
 
     .otro-color {
